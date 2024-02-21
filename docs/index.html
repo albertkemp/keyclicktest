@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  img {
+    height: 100px;
+    float: left;
+  }
+</style>
+</head>
+<body>
+<h1>Test</h1>
+<input onkeydown='testFunc()'>
+<div id='result'>
+
+</div>
+<script type='text/javascript'>
+ const result = document.getElementById('result');
+function testFunc(){
+	const img = document.createElement('img');
+    result.appendChild(img);
+    img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banana-Single.jpg/2324px-Banana-Single.jpg';
+}
+</script>
+</body>
+
+</html>
